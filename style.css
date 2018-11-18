@@ -1,0 +1,97 @@
+body {
+    background-color: #cffdf8;
+    font-weight: normal;
+    font-style:normal;
+    background-size :cover;
+    cursor:auto;
+    padding: 0;
+	margin:0;
+ 
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f76262;
+    display: flex;
+}
+
+
+li {
+    float: left;
+ 	 display: flex;
+  	align-items: center;
+  	 border-left: 1px solid black;
+    }
+li:last-child {
+    margin-left: auto;
+}
+li:nth-last-child(2) {
+	border-right: 1px solid black;
+}
+
+li a {
+    color: black;
+    padding: 4px 16px;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: Lato, Helvetica, sans-serif;
+    border-radius:10px;
+    height: 100%;
+}
+li a p {
+    vertical-align: middle;
+}
+li:hover:not(.active) {
+    background-color: #216583;
+    transition: all 1s;
+}
+
+li a:focus {
+    border: 0;
+}
+ li:a:active{
+    color: #f76262;
+ }
+
+
+#logo-li {
+    border-right: none;
+}
+#logo{
+    display: block;
+    height: 10vh;
+    width: 10vw;
+}
+.active {
+    background-color: #D3D3D3;
+}
+.notification{
+    margin: 10px 0px;
+    padding:12px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}   
+.notification_error{
+    color: #D8000C;
+    background-color: #FFD2D2;
+}
+.notification_success{
+    color: #4F8A10;
+    background-color: #DFF2BF;
+}
+#validate-button{
+    margin:0 auto;
+    display:block;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 9px 24px;
+    text-align: center;
+    text-decoration: none;
+        font-size: 14px;
+}
